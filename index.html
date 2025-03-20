@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday, My Love! 💖</h1>
+        
+        <p class="message">Wishing you a day filled with love, joy, and laughter! 🎂✨</p>
+        
+        <div class="gallery">
+            <img src="photo1.jpeg" alt="Photo 1">
+            <img src="flower.jpeg" alt="Photo 2">
+            <img src="photo3.jpeg" alt="Photo 3">
+        </div>
+        
+        <button onclick="showSurprise()">Click for a Surprise! 🎁</button>
+        
+        <div id="surprise" class="hidden">
+            <p>You are the most special person in my life! ❤️</p>
+            <div>
+                <img src="flower.jpeg" alt="flower" class="flower">
+                <p class="propasal-text">Will you be mine forever? 💍❤️</p>
+
+            </div>
+        </div>
+        
+        <audio controls autoplay>
+            <source src="Bae.mpeg" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+    
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
+
